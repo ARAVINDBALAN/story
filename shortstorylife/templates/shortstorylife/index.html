@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="its a shortstory viewer experimental platform">
+    <meta name="keywords" content="shortstory,life,btech,happy,experiment,platform">
+    <meta name="author" content="LadsofBtech">
+
+    <title>Stories - The Short Story Life  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <style>
+      .btn{
+        background: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+      }
+      .btn:hover{
+        background: white;
+        border: 2px solid #ffffff;
+        color: #000000;
+      }
+      p{
+        size: 10px;
+      }
+    
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/css/grayscale.min.css" rel="stylesheet">
+    <script type="text/JavaScript">
+      function validateform() {
+        var e = document.story.title.value;
+        var n = document.story.mine.value;
+        var c = document.story.email.value;
+        if (e == null || e == "",n == null || n == "",c == null || c == "") {
+          alert("Fields required");
+          return false;
+          
+        }
+        else {
+          alert("Your story has been received :)");
+          return true;
+        }
+
+      }
+    </script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container"> 
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#story">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#express">Express</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">The Short Story Life</h1>
+              <p class="intro-text">As simple as life , came a story :)</p>
+                
+              <a href="#story" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <section id="story" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2><u>Today's Story</u></h2>
+            <p class="intro-body">I was a bit curious lad ,<br>then I joined for B.Tech. Now :( <br>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- About Section -->
+     
+
+       <section id="express" class="content-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>Write Your Own Story</h2>
+              <form name="story" method="GET" onsubmit="return validateform()" action="/story/submit">
+                 <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Email"></div>
+                 </br>
+                    <input id="title" type="text" class="form-control" name="title" placeholder="title">
+                 <br>
+                <br>
+                <p><u>Story</u></p>
+                <textarea cols="33" rows="15" name="mine" class="form-control" placeholder="content here...,,">
+                
+                </textarea><br>
+                <button type="submit" class="btn" type="button">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+     <section id="about" class="content-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>About</h2>
+              <p class="information">This is a platform for all the story Lovers to Express<br>
+              Their Love To the craft . </p><br><br>
+              <p class="intro-text">Contact us at shortstorylife@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <!-- Map Section - <!-- Footer -->
+      <div class="container text-center">
+        <p>Copyright &copy; The Short Story Life 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
