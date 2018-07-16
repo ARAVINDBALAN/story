@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'story.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangogirls',
-        'USER': 'name',
+        'NAME': 'shortstorylife',
+        'USER': 'aravind',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
