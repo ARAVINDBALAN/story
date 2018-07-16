@@ -17,10 +17,6 @@ protobuf==3.5.2.post1
 pyasn1==0.4.2
 pyasn1-modules==0.2.1
 pymongo==3.6.1
-python-apt==1.4.0b3
-python-dateutil==2.6.1
-python-debian==0.1.30
-python-twitter==3.4.1
 SQLAlchemy==1.2.7
 whitenoise==3.3.1
 psycopg2==2.7.2
