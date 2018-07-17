@@ -7,5 +7,5 @@ from .models import story
 def mainpage(request):
 	return render(request,'shortstorylife/index.html')
 def submit(request):
-    story(title=request.GET.get("titlestory"),content=request.GET.get("mine"),email=request.GET.get("email")).save()
+    story(title=request.GET.get("title"),content=request.GET.get("mine"),email=request.GET.get("email")).save()
     return render(request,'shortstorylife/index.html')	
